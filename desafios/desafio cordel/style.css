@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+TAS+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Bad Script', cursive;
+    --fonte3: 'Passion One', sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
     font-size: 1em;
 }
 
+
+
 html, body{
-    min-width: 100vh;
+    min-height: 100vh;
     background-color: gray;
 }
 
@@ -16,9 +27,10 @@ header{
 }
 
 header h1{
+    font-family: var(--fonte3);
     padding-top: 50px;
     font-variant: small-caps;
-    font-size: 3em;
+    font-size: 10vw;
 }
 
 header p {
@@ -30,19 +42,27 @@ section{
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-family: var(--fonte2);
+    font-weight: bold;
+    font-size: 3.5vw;
 }
 
 section.normal{
     background-color: white;
+    color: black;
 }
 
 section.imagem{
     background-color: rgba(83, 13, 13, 0.616);
+    color:white;
 }
 
 section.imagem > p{
-    background-color: rgba(0, 0, 0, 0.425);
-    width: 300px;
+    background-color: rgba(0, 0, 0, 0.274);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 20px;
+
 }
 
 a{
