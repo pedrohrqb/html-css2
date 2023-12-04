@@ -8,22 +8,25 @@
 <body>
     <h1>Cadastro de Usuários</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
-        <p>
-            <label for="senha">Usuário:</label>
-            <input type="nickname" name="usuario" id="iusuario" placeholder="Insira o Usuário" required minlength="12" size="12">
-        </p>
-        <p>
-            <label for="nome">Nome do Usuário:</label>
-            <input type="name" name="nome" id="inome" placeholder="Nome Completo" required minlength="10" size="20">
-        </p>
-        <p>
-            <label for="nascimento">Data de Nascimento:</label>
-            <input type="date" name="nascimento" id="inascimento" required>
-        </p>
-        <p>
-            <label for="cpf">CPF:</label>
-            <input type="number" name="cpf" id="icpf" required size="15" max="15" placeholder="000-000-000-00">
-        </p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="senha">Usuário:</label>
+                <input type="nickname" name="usuario" id="iusuario" placeholder="Insira o Usuário" required minlength="12" size="12">
+            </p>
+            <p>
+                <label for="nome">Nome do Usuário:</label>
+                <input type="name" name="nome" id="inome" placeholder="Nome Completo" required minlength="10" size="20">
+            </p>
+            <p>
+                <label for="nascimento">Data de Nascimento:</label>
+                <input type="date" name="nascimento" id="inascimento" required>
+            </p>
+            <p>
+                <label for="cpf">CPF:</label>
+                <input type="number" name="cpf" id="icpf" required size="15" max="15" placeholder="000-000-000-00">
+            </p>
+        </fieldset>
         <p>
             <label for="hora">Hora do Cadastro:</label>
             <input type="time" name="hora" id="ihora" required>
