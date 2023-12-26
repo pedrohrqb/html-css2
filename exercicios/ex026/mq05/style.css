@@ -76,3 +76,22 @@ article > p {
     background-color: rgb(100, 100, 100);
     color: black;
 }
+
+@media screen and (min-width: 768px) {
+    i#icomenu{
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main{
+        width: 768px;
+    }
+
+}
